@@ -1,0 +1,6 @@
+{
+  "name": "ไซบี้ทวงงาน - Siby Classroom Tracker",
+  "description": "ระบบจัดการห้องเรียน มอบหมายงาน ตรวจงาน สมุดคะแนน ผังที่นั่งอัจฉริยะ และสุ่มทีมจับคู่ พร้อมมาสคอตไซบี้ฮัสกี้",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
