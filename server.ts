@@ -228,6 +228,13 @@ Task:
     }
   });
 
+  // Favicon handler to prevent 404 from browser requests
+  app.get('/favicon.ico', (_req, res) => {
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.setHeader('Cache-Control', 'public, max-age=86400');
+    res.send('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🐺</text></svg>');
+  });
+
   // Setup Vite dev server or static files
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'dist')));

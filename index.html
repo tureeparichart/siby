@@ -9,9 +9,23 @@
     <meta property="og:description" content="ระบบจัดการห้องเรียน มอบหมายงาน ตรวจงาน สมุดคะแนน ผังที่นั่งอัจฉริยะ และสุ่มทีมจับคู่ พร้อมมาสคอตไซบี้ฮัสกี้" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐺</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Suppress noisy errors injected by external third-party Chrome extensions (AdBlock, translation plugins)
+      window.addEventListener('unhandledrejection', function(event) {
+        var msg = event && event.reason && (event.reason.message || String(event.reason));
+        if (msg && (
+          msg.indexOf('Could not establish connection') !== -1 ||
+          msg.indexOf('Receiving end does not exist') !== -1 ||
+          msg.indexOf('useCache') !== -1
+        )) {
+          event.preventDefault();
+        }
+      });
+    </script>
   </head>
   <body class="bg-slate-50 text-slate-800 antialiased font-sans">
     <div id="root"></div>
